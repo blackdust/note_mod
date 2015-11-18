@@ -38,8 +38,7 @@
     - @notes.each do |note|
       .note-item
         .row.note-item-head
-          .hidden
-            %p= note.id
+          .hidden{:data=>{:id=>note.id}}
           .col-md-2
             %span 题目：
             %span

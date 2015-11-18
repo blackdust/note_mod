@@ -126,7 +126,7 @@ class @NoteModal
 
     # 删除的效果
     @$elm.on "click",".delete-note-btn",(event)=>
-      id = $(event.target).parent().parent().find('.hidden p').text()
+      id = $(event.target).parent().parent().find('.hidden').attr('data-id')
       res =  confirm("确认删除?")
       if res == true     
         $.ajax
