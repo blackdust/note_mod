@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  mount NoteMod::Engine => '/', :as => 'note_mod'
+  NoteMod::Routing.mount '/note', as: 'note'
   mount PlayAuth::Engine => '/auth', :as => :auth
 end
